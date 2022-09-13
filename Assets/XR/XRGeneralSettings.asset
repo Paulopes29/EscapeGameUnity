@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
+--- !u!114 &-8174831661818581122
+=======
 --- !u!114 &-3492013778745545779
+>>>>>>> d8961ce8433825950151c1705ee4e071bcd4a579
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,11 +13,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
+  m_Script: {fileID: 11500000, guid: f4c3631f5e58749a59194e0cf6baf6d5, type: 3}
+  m_Name: Standalone Providers
+  m_EditorClassIdentifier: 
+  m_RequiresSettingsUpdate: 0
+  m_AutomaticLoading: 0
+  m_AutomaticRunning: 0
+  m_Loaders: []
+=======
   m_Script: {fileID: 11500000, guid: d236b7d11115f2143951f1e14045df39, type: 3}
   m_Name: Standalone Settings
   m_EditorClassIdentifier: 
   m_LoaderManagerInstance: {fileID: 2450657010284076363}
   m_InitManagerOnStart: 1
+>>>>>>> d8961ce8433825950151c1705ee4e071bcd4a579
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28,8 +42,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Keys: 01000000
   Values:
+<<<<<<< HEAD
+  - {fileID: 1245034171189068929}
+--- !u!114 &1245034171189068929
+=======
   - {fileID: -3492013778745545779}
 --- !u!114 &2450657010284076363
+>>>>>>> d8961ce8433825950151c1705ee4e071bcd4a579
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38,6 +57,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
+  m_Script: {fileID: 11500000, guid: d236b7d11115f2143951f1e14045df39, type: 3}
+  m_Name: Standalone Settings
+  m_EditorClassIdentifier: 
+  m_LoaderManagerInstance: {fileID: -8174831661818581122}
+  m_InitManagerOnStart: 1
+=======
   m_Script: {fileID: 11500000, guid: f4c3631f5e58749a59194e0cf6baf6d5, type: 3}
   m_Name: Standalone Providers
   m_EditorClassIdentifier: 
@@ -47,3 +73,4 @@ MonoBehaviour:
   m_Loaders:
   - {fileID: 11400000, guid: 1c9da4fa511ae934da0c6e83ceb40e45, type: 2}
   - {fileID: 11400000, guid: 6c206e8750d5a48468899bb847ea20e1, type: 2}
+>>>>>>> d8961ce8433825950151c1705ee4e071bcd4a579
