@@ -11,24 +11,10 @@
     "com.unity.timeline": "1.6.4",
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.7.8",
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-    "com.unity.xr.interaction.toolkit": "2.0.3",
-    "com.unity.xr.management": "4.2.1",
     "com.unity.xr.oculus": "3.0.2",
-    "com.unity.xr.openxr": "1.4.2",
-=======
     "com.unity.xr.management": "4.2.1",
->>>>>>> 4958f8a (Premiere salle)
-=======
-    "com.unity.xr.management": "4.2.1",
-=======
     "com.unity.xr.interaction.toolkit": "2.0.3",
-    "com.unity.xr.management": "4.2.1",
-    "com.unity.xr.oculus": "3.0.2",
     "com.unity.xr.openxr": "1.4.2",
->>>>>>> d8961ce8433825950151c1705ee4e071bcd4a579
->>>>>>> Stashed changes
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",

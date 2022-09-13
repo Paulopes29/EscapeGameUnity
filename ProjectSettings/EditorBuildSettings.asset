@@ -5,15 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes: []
-<<<<<<< Updated upstream
-  m_configObjects: {}
-=======
   m_configObjects:
-<<<<<<< HEAD
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2e16bbb3bdf5f724c9d6695dc94864b8, type: 2}
-=======
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 83bdc0dececa3fb4885dded66db16708, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 61acdb12ea8e6074aa16dfb61d8941a7, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 3311b963556ad8a4daf634509afc060c, type: 2}
->>>>>>> d8961ce8433825950151c1705ee4e071bcd4a579
->>>>>>> Stashed changes
