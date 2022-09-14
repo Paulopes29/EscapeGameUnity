@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
@@ -9,6 +8,7 @@ public class ScoreManagement : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
     int score = 0;
+    private GameObject door;
 	
     // Start is called before the first frame update
     void Start()
@@ -30,8 +30,13 @@ public class ScoreManagement : MonoBehaviour
 	int canOpen = CanOpenDoor();
 
 	if(canOpen == 1){
-		int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
- 		SceneManager.LoadScene(nextSceneIndex);
+		if(!door) door = GameObject.FindGameObjectWithTag("Porte");
+		door.SetActive(false);
+	}
+	else
+	{
+		if(!door) door = GameObject.FindGameObjectWithTag("Porte");
+		door.SetActive(true);
 	}
     }
 

@@ -8,6 +8,7 @@ TagManager:
   - Obstacle
   - Key
   - TheDoor
+  - GroundTeleportationValide
   layers:
   - Default
   - TransparentFX

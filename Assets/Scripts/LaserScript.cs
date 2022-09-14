@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class LaserScript : MonoBehaviour
 {
@@ -8,7 +9,8 @@ public class LaserScript : MonoBehaviour
     [SerializeField]
 
     private Transform startPoint;
-    private GameObject[] objs;
+    private GameObject door;
+    private GameObject ground;
 
     void Start()
     {
@@ -27,18 +29,23 @@ public class LaserScript : MonoBehaviour
                 lr.SetPosition(1, hit.point);
                 
             }
-
             
 
              if(hit.transform.tag == "Obstacle")
              {
-                 objs = GameObject.FindGameObjectsWithTag("Porte");
+                 if(!door) door = GameObject.FindGameObjectWithTag("Porte");
+		     if(!ground) ground = GameObject.FindGameObjectWithTag("GroundTeleportationValide");
+		     ground.GetComponent<TeleportationArea>().enabled = true;
+			door.SetActive(false);
+             }else
+		{
+			if(!door) door = GameObject.FindGameObjectWithTag("Porte");
+			door.SetActive(true);
 
-                    foreach (GameObject obj in objs)
-                    {
-                        Destroy(obj);
-                    }   
-             }
+		     if(!ground) ground = GameObject.FindGameObjectWithTag("GroundTeleportationValide");
+		     ground.GetComponent<TeleportationArea>().enabled = false;
+
+		}
 
 
         }
