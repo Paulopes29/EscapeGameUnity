@@ -11,7 +11,8 @@ public class LaserScript : MonoBehaviour
     private Transform startPoint;
     private GameObject door;
     private GameObject ground;
-
+    private bool doorOpen = false;
+    
     void Start()
     {
         lr = GetComponent<LineRenderer>();
@@ -34,17 +35,24 @@ public class LaserScript : MonoBehaviour
              if(hit.transform.tag == "Obstacle")
              {
                  if(!door) door = GameObject.FindGameObjectWithTag("Porte");
-		     if(!ground) ground = GameObject.FindGameObjectWithTag("GroundTeleportationValide");
-		     ground.GetComponent<TeleportationArea>().enabled = true;
-			door.SetActive(false);
-             }else
+                 doorOpen = true;
+                 if(door.transform.position.y < 5){
+                 	door.transform.Translate(Vector3.up*Time.deltaTime);
+                 }
+                
+             }
+             else
 		{
+			 Debug.Log(doorOpen);
 			if(!door) door = GameObject.FindGameObjectWithTag("Porte");
-			door.SetActive(true);
-
-		     if(!ground) ground = GameObject.FindGameObjectWithTag("GroundTeleportationValide");
-		     ground.GetComponent<TeleportationArea>().enabled = false;
-
+			
+			if(doorOpen){
+				if(door.transform.position.y > 2.5)
+				{
+					door.transform.Translate(Vector3.down*Time.deltaTime);
+				}
+				doorOpen = false;
+			}
 		}
 
 
@@ -52,6 +60,14 @@ public class LaserScript : MonoBehaviour
         else
         {
             lr.SetPosition(1, -transform.right * 5000);
+            if(!door) door = GameObject.FindGameObjectWithTag("Porte");
+            if(door.transform.position.y > 2.5)
+				{
+					door.transform.Translate(Vector3.down*Time.deltaTime);
+				}
+				doorOpen = false;
+
+
         }
     }
-}
+    }

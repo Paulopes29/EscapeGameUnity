@@ -1,0 +1,11 @@
+Model Information:
+* title:	Door - lowpoly game asset
+* source:	https://sketchfab.com/3d-models/door-lowpoly-game-asset-e7ff1462d13345a18d60a815ececd0b0
+* author:	MehraN (https://sketchfab.com/mehran1500)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Door - lowpoly game asset" (https://sketchfab.com/3d-models/door-lowpoly-game-asset-e7ff1462d13345a18d60a815ececd0b0) by MehraN (https://sketchfab.com/mehran1500) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
